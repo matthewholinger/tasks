@@ -5,139 +5,45 @@
 PASS src/objects.test.ts
 PASS src/arrays.test.ts
 PASS src/nested.test.ts
-PASS src/functions.test.ts
 PASS src/components/StartAttempt.test.tsx
+PASS src/components/TwoDice.test.tsx
+PASS src/bad-components/DoubleHalf.test.tsx
+PASS src/bad-components/ChooseTeam.test.tsx
+PASS src/functions.test.ts
 PASS src/components/CycleHoliday.test.tsx
 PASS src/components/ChangeType.test.tsx
-PASS src/components/TwoDice.test.tsx
 PASS src/components/RevealAnswer.test.tsx
-PASS src/components/Counter.test.tsx
-FAIL src/App.test.tsx
-  ● renders the course name somewhere
+PASS src/bad-components/ColoredBox.test.tsx
+PASS src/App.test.tsx
+PASS src/bad-components/ShoveBox.test.tsx
+--------------------|---------|----------|---------|---------|-------------------
+File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+--------------------|---------|----------|---------|---------|-------------------
+All files           |   97.41 |    93.18 |   99.03 |    97.2 |                   
+ src                |   96.77 |    93.84 |     100 |   96.42 |                   
+  App.tsx           |     100 |      100 |     100 |     100 |                   
+  arrays.ts         |   95.91 |    95.45 |     100 |   95.65 | 91,111            
+  functions.ts      |     100 |      100 |     100 |     100 |                   
+  nested.ts         |   96.87 |     91.3 |     100 |   96.15 | 219,260           
+  objects.ts        |   95.83 |    83.33 |     100 |   95.83 | 50                
+ src/bad-components |     100 |       75 |     100 |     100 |                   
+  ChooseTeam.tsx    |     100 |       75 |     100 |     100 | 19                
+  ColoredBox.tsx    |     100 |      100 |     100 |     100 |                   
+  DoubleHalf.tsx    |     100 |      100 |     100 |     100 |                   
+  ShoveBox.tsx      |     100 |      100 |     100 |     100 |                   
+ src/components     |   97.82 |    94.73 |   94.44 |   97.72 |                   
+  ChangeType.tsx    |     100 |      100 |     100 |     100 |                   
+  CycleHoliday.tsx  |     100 |      100 |     100 |     100 |                   
+  RevealAnswer.tsx  |     100 |      100 |     100 |     100 |                   
+  StartAttempt.tsx  |     100 |       75 |     100 |     100 | 9                 
+  TwoDice.tsx       |   91.66 |      100 |      80 |   91.66 | 11                
+ src/interfaces     |       0 |        0 |       0 |       0 |                   
+  answer.ts         |       0 |        0 |       0 |       0 |                   
+  question.ts       |       0 |        0 |       0 |       0 |                   
+--------------------|---------|----------|---------|---------|-------------------
 
-    TestingLibraryElementError: Unable to find an element with the text: /CISC275/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div>[39m
-          [36m<h1>[39m
-            [0mWelcome to My App![0m
-          [36m</h1>[39m
-          [36m<span>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mAdd One[0m
-            [36m</button>[39m
-            [0mto [0m
-            [0m0[0m
-            [0m.[0m
-          [36m</span>[39m
-          [36m<div>[39m
-            [36m<span[39m
-              [33mdata-testid[39m=[32m"left-die"[39m
-            [36m>[39m
-              [0m1[0m
-            [36m</span>[39m
-            [36m<span[39m
-              [33mdata-testid[39m=[32m"right-die"[39m
-            [36m>[39m
-              [0m2[0m
-            [36m</span>[39m
-            [36m<br />[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mRoll Left[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mRoll Right[0m
-            [36m</button>[39m
-          [36m</div>[39m
-          [36m<div>[39m
-            [36m<button>[39m
-              [0mStart Quiz[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mdisabled[39m=[32m""[39m
-            [36m>[39m
-              [0mStop Quiz[0m
-            [36m</button>[39m
-            [36m<button>[39m
-              [0mMulligan[0m
-            [36m</button>[39m
-            [36m<p>[39m
-              [0mAttempts remaining: [0m
-              [0m4[0m
-            [36m</p>[39m
-          [36m</div>[39m
-          [36m<div>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mReveal Answer[0m
-            [36m</button>[39m
-          [36m</div>[39m
-          [36m<div>[39m
-            [36m<p>[39m
-              [0mHoliday: [0m
-              [0m🎃[0m
-            [36m</p>[39m
-            [36m<button>[39m
-              [0mAdvance by Alphabet[0m
-            [36m</button>[39m
-            [36m<button>[39m
-              [0mAdvance by Year[0m
-            [36m</button>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
-
-       5 | test("renders the course name somewhere", () => {
-       6 |     render(<App />);
-    >  7 |     const linkElement = screen.getByText(/CISC275/i);
-         |                                ^
-       8 |     expect(linkElement).toBeInTheDocument();
-       9 | });
-      10 |
-
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
-      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
-      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/App.test.tsx:7:32)
-
--------------------|---------|----------|---------|---------|-------------------
-File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
--------------------|---------|----------|---------|---------|-------------------
-All files          |   97.05 |    94.04 |   98.88 |   96.79 |                   
- src               |   96.77 |    93.84 |     100 |   96.42 |                   
-  App.tsx          |     100 |      100 |     100 |     100 |                   
-  arrays.ts        |   95.91 |    95.45 |     100 |   95.65 | 91,111            
-  functions.ts     |     100 |      100 |     100 |     100 |                   
-  nested.ts        |   96.87 |     91.3 |     100 |   96.15 | 219,260           
-  objects.ts       |   95.83 |    83.33 |     100 |   95.83 | 50                
- src/components    |   97.95 |    94.73 |      95 |   97.87 |                   
-  ChangeType.tsx   |     100 |      100 |     100 |     100 |                   
-  Counter.tsx      |     100 |      100 |     100 |     100 |                   
-  CycleHoliday.tsx |     100 |      100 |     100 |     100 |                   
-  RevealAnswer.tsx |     100 |      100 |     100 |     100 |                   
-  StartAttempt.tsx |     100 |       75 |     100 |     100 | 9                 
-  TwoDice.tsx      |   91.66 |      100 |      80 |   91.66 | 11                
- src/interfaces    |       0 |        0 |       0 |       0 |                   
-  answer.ts        |       0 |        0 |       0 |       0 |                   
-  question.ts      |       0 |        0 |       0 |       0 |                   
--------------------|---------|----------|---------|---------|-------------------
-Test Suites: 1 failed, 10 passed, 11 total
-Tests:       1 failed, 92 passed, 93 total
+Test Suites: 14 passed, 14 total
+Tests:       105 passed, 105 total
 Snapshots:   0 total
-Time:        5.102 s
+Time:        5.852 s
 Ran all test suites.
